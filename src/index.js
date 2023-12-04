@@ -6,7 +6,7 @@ import './styles/styles.css';
 const main = async () => {
     const response = await fetch(API);
     const products = await response.json();
-    const output =products.map((products) => {
+    const output = products.map((product) => {
         return `
         <article class="Card">
             <img src="${product.images[0]}" />

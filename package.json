@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "web-dev-server --config web-dev-server.config.js",
     "build": "rollup -c"

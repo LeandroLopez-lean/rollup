@@ -5,12 +5,12 @@ import image from '@rollup/plugin-image';
 
 export default {
     input: "src/index.js",
-    ouput: {
+    output: {
         file: 'dist/bundle.js',
         format: 'es',
         soucemap: true,
     },
-    Plugins: [
+    plugins: [
         copy({
             targets: [
                 {
@@ -20,7 +20,7 @@ export default {
             ]
         }),
         css({
-            output: 'bundle.css'
+            output: 'dist/bundle.css'
         }),
         html(),
         image(),
